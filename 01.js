@@ -17,17 +17,6 @@ function menorMayor(numeros) {
   var mema= [];
   var mayor= numeros[0];
   var menor = numeros[0];
-  // for (var i = 0; i < numeros.length; i++){
-    // for (var j=i; j < numeros.length; j++){
-    //   if (numeros[i]<numeros[j]){
-    //     menor = numeros[i]
-    //   }
-    //   if (numeros[i]>numeros[j]){
-    //     mayor = numeros[i]
-    //   }
-    // }
-  // }
-
 
   numeros.forEach(numero => {
     if (numero > mayor) {
