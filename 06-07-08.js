@@ -22,7 +22,7 @@ function crearClaseEmprendedor() {
         // no debe retornar nada.
 
         // Tu código aca:
-        this.mascota.push(mascota);
+        this.mascotas.push(mascota);
       }
 
       getMascotas() {
@@ -32,7 +32,7 @@ function crearClaseEmprendedor() {
           // emprendedor.getMascotas() debería devolver 2
 
           // Tu código aca:
-          return mascota.length;
+          return this.mascotas.length;
       }
 
       addBook(book, autor) {
@@ -56,9 +56,12 @@ function crearClaseEmprendedor() {
 
           // Tu código aca:
           var namebooks=[];
-          this.libros.forEach(function () {
-            namebooks.push(this.libros.nombre)
-          });
+          // this.libros.forEach(function (libro) {
+          //   namebooks.push(this.libros.nombre)
+          // });
+          this.libros.forEach( libro => {
+            namebooks.push(libro.nombre)
+          })
           return namebooks;
       }
 

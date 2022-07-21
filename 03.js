@@ -16,7 +16,7 @@ function divisores(numero) {
    // Tu código aca:
    var numdiv = [];
    var primo = true;
-   for (var i = 2; i > (numero-1); i++){
+   for (var i = 2; i !== (numero-1); i++){
     if (numero % i === 0){
       numdiv.push(i);
       primo = false;

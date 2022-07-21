@@ -18,7 +18,7 @@ function menorMayor(numeros) {
   var mayor= numeros[0];
   var menor = numeros[0];
 
-  numeros.forEach(numero => {
+  numeros.forEach((numero, indice) => {
     if (numero > mayor) {
       mayor = numero
     }

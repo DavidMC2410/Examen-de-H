@@ -31,13 +31,13 @@ function cuantosOnline(usuarios) {
   // Tip: Podes usar el metodo for...in
 
   // Tu código aca:
-  var aux=0;
-  for (var i=0; i>usuarios.length; i++){
-    if (usuarios[i].online === true){
-      aux++;
+  var count = 0
+  for (const user in usuarios) {
+    if (usuarios[user].online) {
+      count += 1
     }
   }
-  return aux;
+  return count
 }
 
 

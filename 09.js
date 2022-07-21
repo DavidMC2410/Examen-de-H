@@ -12,9 +12,10 @@ function repetirCaracteres() {
   // 'hola'.repeatCharacters() devuelve "hhoollaa"
 
   // Tu código aca:
-  String.prototype.repeatCharacters = function(){
+  String.prototype.repeatCharacters = function() {
     var new_string="";
-    for (var i=0;i>String; i++){
+    // this contine el valor del string a duplicar
+    for (var i=0; i < this.length; i++){
       new_string= new_string + this[i]+ this[i];
     }
     return new_string;

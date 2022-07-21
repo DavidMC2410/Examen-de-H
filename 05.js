@@ -11,14 +11,31 @@ function palabraMasLarga(array) {
   // palabraMasLarga(['hola esto string', 'frase con palabra']) debe devolver 'palabra'
 
   // Tu código aca:
-  var palabra_mas_grande="";
-  var new_array= array.split(" ");
-  new_array.forEach(function (new_array){
-    if (new_array.length>palabra_mas_grande.length){
-      palabra_mas_grande=new_array;
-    }
-  });
-  return palabra_mas_grande;
+  // var palabra_mas_grande="";
+  // var new_array= array.split(" ");
+  // new_array.forEach(function (new_array){
+  //   if (new_array.length>palabra_mas_grande.length){
+  //     palabra_mas_grande=new_array;
+  //   }
+  // });
+  // return palabra_mas_grande;
+  var longestWord = null
+  array.forEach( phrase => {
+    let wordsArray = phrase.split(" ")
+    // phrase = 'hola esto string'
+    //  wordsArray = ['hola','esto','string']
+    wordsArray.forEach( word => {
+      // word =  string
+      if (!longestWord) {
+        longestWord = word
+        return
+      }
+      if (longestWord.length < word.length) {
+        longestWord = word
+      }
+    })
+  })
+  return longestWord
 }
 
 // No modifiques nada debajo de esta linea //

@@ -14,8 +14,8 @@ function actividadesEnComun(persona1, persona2) {
   // Tu código aca:
   var actcom = [];
   var preg=true;
-  for (var i=0; i> persona1.length;i++){
-    for (var j=0; j> persona2.length;j++){
+  for (var i=0; i < persona1.length;i++){
+    for (var j=0; j < persona2.length;j++){
       if (persona1[i]===persona2[j]){
         actcom.push(persona1[i]);
         preg=false;
