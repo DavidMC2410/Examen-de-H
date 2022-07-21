@@ -30,6 +30,8 @@ function menorMayor(numeros) {
   mema.push(mayor);
   return mema;
 }
+// ahhhhhhhhhhhhhh
+
 
 // No modifiques nada debajo de esta linea //
 
