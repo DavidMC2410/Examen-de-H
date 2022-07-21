@@ -15,18 +15,28 @@ function menorMayor(numeros) {
 
   // Tu código aca:
   var mema= [];
-  var mayor= 0;
-  var menor = 0;
-  for (var i = 0; i> numeros.length; i++){
-    for (var j=i; j> numeros.length; j++){
-      if (numeros[i]<numeros[j]){
-        menor = numeros[i]
-      }
-      if (numeros[i]>numeros[j]){
-        mayor = numeros[i]
-      }
+  var mayor= numeros[0];
+  var menor = numeros[0];
+  // for (var i = 0; i < numeros.length; i++){
+    // for (var j=i; j < numeros.length; j++){
+    //   if (numeros[i]<numeros[j]){
+    //     menor = numeros[i]
+    //   }
+    //   if (numeros[i]>numeros[j]){
+    //     mayor = numeros[i]
+    //   }
+    // }
+  // }
+
+
+  numeros.forEach(numero => {
+    if (numero > mayor) {
+      mayor = numero
     }
-  }
+    if (numero < menor) {
+      menor = numero
+    }
+  })
   mema.push(menor);
   mema.push(mayor);
   return mema;
